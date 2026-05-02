@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <div className="bg-background text-text-main min-h-screen font-sans pb-10">
       {/* Top Section (Header + Banner) */}
-      <div className="relative overflow-hidden bg-black min-h-[340px] pt-8">
+      <div className="relative overflow-hidden bg-black min-h-[280px] pt-8">
         {/* Shared Background Image */}
         <img 
           src="/images/Gemini_Generated_Image_8h2jn58h2jn58h2j.png" 
@@ -64,9 +64,9 @@ const Home = () => {
           </div>
 
           {/* Banner Content */}
-          <div className="px-8 pt-6 pb-10">
-            <h2 className="text-[28px] font-normal mb-1 tracking-tight">Earn up to ₹51 cashback</h2>
-            <p className="text-gray-300 text-base mb-8">On first Pocket Money payment</p>
+          <div className="px-8 pt-4 pb-6">
+            <h2 className="text-[26px] font-normal mb-1 tracking-tight text-white">Earn up to ₹51 cashback</h2>
+            <p className="text-gray-300 text-[15px] mb-6">On first Pocket Money payment</p>
             <div className="flex items-center gap-4">
               <span className="text-[#a8c7fa] text-lg font-medium">Set up Pocket Money</span>
               <div className="w-11 h-11 rounded-full bg-[#a8c7fa] flex items-center justify-center shadow-lg">
