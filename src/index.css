@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-sans: "Google Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Global Design System Colors */
+  --color-background: #0f0f0f;
+  --color-surface: #1f1f1f;
+  --color-surface-bright: #2a2a2a;
+  
+  --color-primary: #0a56d9;
+  --color-primary-hover: #1a50b2;
+  
+  --color-text-main: #ffffff;
+  --color-text-secondary: #9ca3af;
+  --color-text-accent: #60a5fa;
+  
+  --color-border-main: #1f2937;
+  
+  /* Feature Colors */
+  --color-reward-gold: #fbbf24;
+  --color-offer-rose: #fb7185;
+}
+
+* {
+  font-family: "Google Sans", sans-serif;
+}
+
+body {
+  @apply bg-background text-text-main;
+}
+
+/* Custom Utilities if needed */
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
