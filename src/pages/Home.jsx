@@ -1,5 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import scanQrIcon from '../assets/icons/scan-any-qr-code.svg'
+import payAnyoneIcon from '../assets/icons/pay-anyone.svg'
+import bankTransferIcon from '../assets/icons/bank-transfer.svg'
+import mobileRechargeIcon from '../assets/icons/mobile-recharge.svg'
+import tapAndPayIcon from '../assets/icons/tap-n-pay.svg'
+
+import Pills from '../components/Pills'
+
 import {
   Search,
   QrCode,
@@ -83,46 +91,35 @@ const Home = () => {
         <div className="grid grid-cols-4 gap-4 mt-6">
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-2">
-              <QrCode className="w-6 h-6 text-white" />
+              <img src={scanQrIcon} alt="Scan QR" className="w-5 h-5" />
             </div>
-            <span className="text-xs text-center text-gray-300">Scan any<br />QR code</span>
+            <span className="text-xs text-center text-main">Scan any<br />QR code</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-2">
-              <SendToBack className="w-6 h-6 text-white" />
+              <img src={payAnyoneIcon} alt="Scan QR" className="w-5 h-5" />
             </div>
-            <span className="text-xs text-center text-gray-300">Pay<br />anyone</span>
+            <span className="text-xs text-center text-main">Pay<br />anyone</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-2">
-              <Landmark className="w-6 h-6 text-white" />
+              <img src={bankTransferIcon} alt="Scan QR" className="w-5 h-5" />
             </div>
-            <span className="text-xs text-center text-gray-300">Bank<br />transfer</span>
+            <span className="text-xs text-center text-main">Bank<br />transfer</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-2">
-              <Smartphone className="w-6 h-6 text-white" />
+              <img src={mobileRechargeIcon} alt="Scan QR" className="w-5 h-5" />
             </div>
-            <span className="text-xs text-center text-text-secondary">Mobile<br />recharge</span>
+            <span className="text-xs text-center text-main">Mobile<br />recharge</span>
           </div>
         </div>
 
         {/* Pills */}
         <div className="flex gap-3 mt-6 overflow-x-auto no-scrollbar py-1">
-          <div className="flex items-center gap-2 bg-surface border border-border-main rounded-full px-4 py-2 whitespace-nowrap">
-            <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <Wifi className="w-4 h-4 text-blue-400" />
-            </div>
-            <span className="text-sm">Tap & Pay<br/><span className="text-xs text-gray-400">UPI</span></span>
-          </div>
-          <div className="flex items-center gap-2 bg-surface border border-border-main rounded-full px-4 py-2 whitespace-nowrap">
-            <Rocket className="w-5 h-5 text-orange-400" />
-            <span className="text-sm">UPI Lite<br/><span className="text-xs text-gray-400">₹0.52</span></span>
-          </div>
-          <div className="flex items-center gap-2 bg-surface border border-border-main rounded-full px-4 py-2 whitespace-nowrap">
-            <Trophy className="w-5 h-5 text-yellow-500" />
-            <span className="text-sm">Rewards<br/><span className="text-xs text-gray-400">New</span></span>
-          </div>
+          <Pills icon={tapAndPayIcon}>Tap & Pay<br/><span className="text-xs text-main">UPI</span></Pills>
+          <Pills icon={Rocket}>UPI Lite<br/><span className="text-xs text-gray-400">₹0.52</span></Pills>
+          <Pills icon={Trophy}>Rewards<br/><span className="text-xs text-gray-400">New</span></Pills>
         </div>
 
         {/* People */}
@@ -385,4 +382,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home
