@@ -1,10 +1,25 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import scanQrIcon from '../assets/icons/scan-any-qr-code.svg'
-import payAnyoneIcon from '../assets/icons/pay-anyone.svg'
-import bankTransferIcon from '../assets/icons/bank-transfer.svg'
-import mobileRechargeIcon from '../assets/icons/mobile-recharge.svg'
+import scanQrIcon from '../assets/icons/scanner.svg'
+import payAnyoneIcon from '../assets/icons/pay-anyone copy.svg'
+import bankTransferIcon from '../assets/icons/bank.svg'
+import mobileRechargeIcon from '../assets/icons/Mobile.svg'
 import tapAndPayIcon from '../assets/icons/tap-n-pay.svg'
+import upLiteIcon from '../assets/icons/upi-lite.png'
+import rewardsicon from '../assets/icons/rewards.png'
+import jioIcon from '../assets/icons/jio.png'
+import hboIcon from '../assets/icons/HBO.png'
+import awsIcon from '../assets/icons/AWS.png'
+import netflixIcon from '../assets/icons/netflix.png'
+import zomatoIcon from '../assets/icons/business-zomato.png'
+import subscriptionsIcon from '../assets/icons/subscriptions.svg'
+import giftCardsIcon from '../assets/icons/gift-cards.svg'
+import rewardsOfferIcon from '../assets/icons/offer-n-rewards-rewards.png'
+import offersOfferIcon from '../assets/icons/offer-n-rewards-offers.png'
+import referralsOfferIcon from '../assets/icons/offer-n-rewards-referrals.png'
+import checkCibilIcon from '../assets/icons/check-cibil-score.svg'
+import seeTransactionHistoryIcon from '../assets/icons/see-transaction-history.svg'
+import checkBankBalanceIcon from '../assets/icons/check-bank-balance.svg'
 
 import Pills from '../components/Pills'
 
@@ -44,8 +59,8 @@ const Home = () => {
       {/* Top Section (Header + Banner) */}
       <div className="relative overflow-hidden bg-black min-h-[280px] pt-8">
         {/* Shared Background Image */}
-        <img 
-          src="/images/Gemini_Generated_Image_8h2jn58h2jn58h2j.png" 
+        <img
+          src="/images/Gemini_Generated_Image_8h2jn58h2jn58h2j.png"
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
@@ -66,7 +81,7 @@ const Home = () => {
                 />
               </div>
               <div className="w-12 h-12 rounded-full bg-[#e67c00] flex items-center justify-center font-normal text-xl shadow-lg border border-white/10">
-                Y
+                A
               </div>
             </div>
           </div>
@@ -91,25 +106,25 @@ const Home = () => {
         <div className="grid grid-cols-4 gap-4 mt-6">
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-2">
-              <img src={scanQrIcon} alt="Scan QR" className="w-5 h-5" />
+              <img src={scanQrIcon} alt="Scan QR" className="w-7 h-7" />
             </div>
             <span className="text-xs text-center text-main">Scan any<br />QR code</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-2">
-              <img src={payAnyoneIcon} alt="Scan QR" className="w-5 h-5" />
+              <img src={payAnyoneIcon} alt="Scan QR" className="w-7 h-7" />
             </div>
             <span className="text-xs text-center text-main">Pay<br />anyone</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-2">
-              <img src={bankTransferIcon} alt="Scan QR" className="w-5 h-5" />
+              <img src={bankTransferIcon} alt="Scan QR" className="w-7 h-7" />
             </div>
             <span className="text-xs text-center text-main">Bank<br />transfer</span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-2">
-              <img src={mobileRechargeIcon} alt="Scan QR" className="w-5 h-5" />
+              <img src={mobileRechargeIcon} alt="Scan QR" className="w-7 h-7" />
             </div>
             <span className="text-xs text-center text-main">Mobile<br />recharge</span>
           </div>
@@ -117,9 +132,9 @@ const Home = () => {
 
         {/* Pills */}
         <div className="flex gap-3 mt-6 overflow-x-auto no-scrollbar py-1">
-          <Pills icon={tapAndPayIcon}>Tap & Pay<br/><span className="text-xs text-main">UPI</span></Pills>
-          <Pills icon={Rocket}>UPI Lite<br/><span className="text-xs text-gray-400">₹0.52</span></Pills>
-          <Pills icon={Trophy}>Rewards<br/><span className="text-xs text-gray-400">New</span></Pills>
+          <Pills icon={tapAndPayIcon}>Tap & Pay<br /><span className="text-xs text-main">UPI</span></Pills>
+          <Pills icon={upLiteIcon}>UPI Lite<br /><span className="text-xs text-gray-400">₹0.52</span></Pills>
+          <Pills icon={rewardsicon}>Rewards<br /><span className="text-xs text-gray-400">New</span></Pills>
         </div>
 
         {/* People */}
@@ -144,7 +159,7 @@ const Home = () => {
               <div className="w-14 h-14 bg-purple-700 rounded-full flex items-center justify-center mb-2 text-xl">R</div>
               <span className="text-xs text-gray-300 truncate w-full text-center uppercase">RAMAN K...</span>
             </div>
-            
+
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 bg-stone-500 rounded-full flex items-center justify-center mb-2 text-xl">A</div>
               <span className="text-xs text-gray-300 truncate w-full text-center uppercase">AKSHITA S...</span>
@@ -176,8 +191,8 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-4 gap-y-6">
             <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-[#0a56d9] rounded-full flex items-center justify-center mb-2">
-                 <span className="font-bold text-white text-lg">Jio</span>
+              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                <img src={jioIcon} alt="Jio" className="w-full h-full object-cover" />
               </div>
               <span className="text-xs text-gray-300 text-center">Jio Prepaid</span>
             </div>
@@ -185,13 +200,13 @@ const Home = () => {
               <div className="w-14 h-14 bg-[#0a56d9] rounded-full flex items-center justify-center mb-2">
                 <Smartphone className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xs text-gray-300 text-center">Mobile<br/>recharge</span>
+              <span className="text-xs text-gray-300 text-center">Mobile<br />recharge</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 bg-[#0a56d9] rounded-full flex items-center justify-center mb-2">
                 <Tv className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xs text-gray-300 text-center">DTH / Cable<br/>TV</span>
+              <span className="text-xs text-gray-300 text-center">DTH / Cable<br />TV</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 bg-[#0a56d9] rounded-full flex items-center justify-center mb-2">
@@ -199,8 +214,8 @@ const Home = () => {
               </div>
               <span className="text-xs text-gray-300 text-center">Electricity</span>
             </div>
-            
-            <div className="flex flex-col items-center">
+
+            {/* <div className="flex flex-col items-center">
               <div className="w-14 h-14 bg-[#0a56d9] rounded-full flex items-center justify-center mb-2">
                 <CarFront className="w-6 h-6 text-white" />
               </div>
@@ -217,12 +232,31 @@ const Home = () => {
                 <Wifi className="w-6 h-6 text-white" />
               </div>
               <span className="text-xs text-gray-300 text-center">Broadband /<br/>Landline</span>
-            </div>
+            </div> */}
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 bg-[#0a56d9] rounded-full flex items-center justify-center mb-2">
                 <CreditCard className="w-6 h-6 text-white" />
               </div>
               <span className="text-xs text-gray-300 text-center">Credit cards</span>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <div className="w-14 h-14 rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                <img src={hboIcon} alt="HBO" className="w-full h-full object-contain" />
+              </div>
+              <span className="text-xs text-gray-300 text-center">HBO</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="w-14 h-14 rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                <img src={awsIcon} alt="AWS" className="w-full h-full object-contain" />
+              </div>
+              <span className="text-xs text-gray-300 text-center">AWS</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <div className="w-14 h-14 rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                <img src={netflixIcon} alt="Netflix" className="w-full h-full object-contain" />
+              </div>
+              <span className="text-xs text-gray-300 text-center">Netflix</span>
             </div>
           </div>
         </div>
@@ -231,6 +265,12 @@ const Home = () => {
         <div className="mt-8">
           <h2 className="text-lg font-medium mb-4">Businesses</h2>
           <div className="grid grid-cols-4 gap-y-6">
+            <div className="flex flex-col items-center">
+              <div className="w-14 h-14 rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                <img src={zomatoIcon} alt="Zomato" className="w-full h-full object-contain" />
+              </div>
+              <span className="text-xs text-gray-300 text-center">Zomato</span>
+            </div>
             <div className="flex flex-col items-center">
               <div className="w-14 h-14 bg-purple-700 rounded-full flex items-center justify-center mb-2 text-xl">N</div>
               <span className="text-xs text-gray-300 truncate w-full text-center">New Gajan...</span>
@@ -257,24 +297,30 @@ const Home = () => {
           <h2 className="text-lg font-medium mb-4">Gift cards & more</h2>
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-[#1f1f1f] rounded-2xl p-4 border border-gray-800">
-              <PlaySquare className="w-6 h-6 text-blue-400 mb-3" />
+              <img src={subscriptionsIcon} alt="Subscriptions" className="w-6 h-6 mb-3" />
               <h3 className="font-medium text-sm mb-1">Subscriptions</h3>
               <p className="text-xs text-gray-400 mb-4">Buy plans from leading OTT platforms</p>
               <div className="flex -space-x-2">
-                <div className="w-6 h-6 rounded-full bg-orange-500 border border-[#1f1f1f] z-10 flex items-center justify-center text-[8px] font-bold">Z</div>
-                <div className="w-6 h-6 rounded-full bg-blue-500 border border-[#1f1f1f] z-20 flex items-center justify-center text-[8px] font-bold">*</div>
-                <div className="w-6 h-6 rounded-full bg-cyan-500 border border-[#1f1f1f] z-30 flex items-center justify-center text-[8px] font-bold">P</div>
-              </div>
+                 <div className="w-6 h-6 rounded-full bg-white border border-[#1f1f1f] z-10 flex items-center justify-center overflow-hidden">
+                   <img src={awsIcon} alt="Amazon" className="w-full h-full object-contain" />
+                 </div>
+                 <div className="w-6 h-6 rounded-full bg-white border border-[#1f1f1f] z-20 flex items-center justify-center overflow-hidden">
+                   <img src={hboIcon} alt="HBO" className="w-full h-full object-contain" />
+                 </div>
+                 <div className="w-6 h-6 rounded-full bg-black border border-[#1f1f1f] z-30 flex items-center justify-center overflow-hidden">
+                   <img src={netflixIcon} alt="Netflix" className="w-full h-full object-contain" />
+                 </div>
+               </div>
             </div>
             <div className="bg-[#1f1f1f] rounded-2xl p-4 border border-gray-800">
-              <Gift className="w-6 h-6 text-pink-400 mb-3" />
+              <img src={giftCardsIcon} alt="Gift cards" className="w-6 h-6 mb-3" />
               <h3 className="font-medium text-sm mb-1">Gift cards</h3>
               <p className="text-xs text-gray-400 mb-4">Buy gift cards from the biggest brands</p>
-              <div className="flex -space-x-2">
-                <div className="w-6 h-6 rounded-full bg-yellow-500 border border-[#1f1f1f] z-10 flex items-center justify-center text-[8px] font-bold">F</div>
-                <div className="w-6 h-6 rounded-full bg-blue-400 border border-[#1f1f1f] z-20 flex items-center justify-center text-[8px] font-bold">A</div>
-                <div className="w-6 h-6 rounded-full bg-orange-400 border border-[#1f1f1f] z-30 flex items-center justify-center text-[8px] font-bold">M</div>
-              </div>
+               <div className="flex -space-x-2">
+                 <div className="w-6 h-6 rounded-full bg-white border border-[#1f1f1f] z-10 flex items-center justify-center overflow-hidden">
+                   <img src={awsIcon} alt="Amazon" className="w-full h-full object-contain" />
+                 </div>
+               </div>
             </div>
           </div>
         </div>
@@ -282,34 +328,30 @@ const Home = () => {
         {/* Offers & rewards */}
         <div className="mt-8">
           <h2 className="text-lg font-medium mb-4">Offers & rewards</h2>
-          <div className="grid grid-cols-4 gap-y-6 mb-6">
-            <div className="flex flex-col items-center relative">
-              <div className="w-14 h-14 bg-gradient-to-br from-yellow-300 to-yellow-600 rounded-full flex items-center justify-center mb-2">
-                <Trophy className="w-7 h-7 text-white" />
+          <div className="grid grid-cols-3 gap-y-6 mb-6">
+            <div className="flex flex-col items-center">
+              <div className="relative">
+                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                  <img src={rewardsOfferIcon} alt="Rewards" className="w-full h-full object-cover" />
+                </div>
+                <div className="absolute top-0 right-0 w-3 h-3 bg-blue-400 rounded-full border-2 border-[#0f0f0f]"></div>
               </div>
-              <div className="absolute top-0 right-1 w-3 h-3 bg-blue-400 rounded-full border-2 border-[#0f0f0f]"></div>
               <span className="text-xs text-gray-300 text-center">Rewards</span>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-gradient-to-br from-rose-400 to-rose-600 rounded-full flex items-center justify-center mb-2">
-                <Tag className="w-7 h-7 text-white" />
+              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                <img src={offersOfferIcon} alt="Offers" className="w-full h-full object-cover" />
               </div>
               <span className="text-xs text-gray-300 text-center">Offers</span>
             </div>
             <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mb-2">
-                <Users className="w-7 h-7 text-white" />
+              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                <img src={referralsOfferIcon} alt="Referrals" className="w-full h-full object-cover" />
               </div>
               <span className="text-xs text-gray-300 text-center">Referrals</span>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mb-2">
-                <Laugh className="w-7 h-7 text-white" />
-              </div>
-              <span className="text-xs text-gray-300 text-center">T20 Vibes</span>
-            </div>
           </div>
-          
+
           {/* Share banner */}
           <div className="bg-[#1f1f1f] rounded-2xl p-5 relative overflow-hidden border border-gray-800 flex justify-between items-center">
             <div className="z-10 w-2/3">
@@ -320,7 +362,7 @@ const Home = () => {
               </button>
             </div>
             <div className="w-20 h-24 bg-gradient-to-t from-gray-800 to-gray-700 rounded-lg flex items-center justify-center relative transform rotate-6 z-10">
-               <span className="text-4xl font-bold text-white">?</span>
+              <span className="text-4xl font-bold text-white">?</span>
             </div>
           </div>
         </div>
@@ -348,7 +390,7 @@ const Home = () => {
         <div className="mt-2 flex flex-col gap-1 pb-8">
           <button className="flex items-center justify-between p-4 hover:bg-[#1a1a1a] rounded-2xl transition-colors">
             <div className="flex items-center gap-4">
-              <Gauge className="w-6 h-6 text-blue-400" />
+              <img src={checkCibilIcon} alt="Check CIBIL score" className="w-6 h-6" />
               <div className="flex flex-col items-start">
                 <span className="text-sm font-medium text-gray-200">Check your CIBIL score for free</span>
                 <span className="text-[10px] bg-blue-600/20 text-blue-400 px-2 py-0.5 rounded-full mt-1">New score available</span>
@@ -356,21 +398,21 @@ const Home = () => {
             </div>
             <ChevronRight className="w-5 h-5 text-gray-500" />
           </button>
-          
-          <button 
+
+          <button
             onClick={() => navigate('/transactions')}
             className="flex items-center justify-between p-4 hover:bg-[#1a1a1a] rounded-2xl transition-colors w-full"
           >
             <div className="flex items-center gap-4">
-              <History className="w-6 h-6 text-blue-400" />
+              <img src={seeTransactionHistoryIcon} alt="See transaction history" className="w-6 h-6" />
               <span className="text-sm font-medium text-gray-200">See transaction history</span>
             </div>
             <ChevronRight className="w-5 h-5 text-gray-500" />
           </button>
-          
+
           <button className="flex items-center justify-between p-4 hover:bg-[#1a1a1a] rounded-2xl transition-colors">
             <div className="flex items-center gap-4">
-              <Landmark className="w-6 h-6 text-blue-400" />
+              <img src={checkBankBalanceIcon} alt="Check bank balance" className="w-6 h-6" />
               <span className="text-sm font-medium text-gray-200">Check bank balance</span>
             </div>
             <ChevronRight className="w-5 h-5 text-gray-500" />

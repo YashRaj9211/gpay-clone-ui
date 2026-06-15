@@ -7,6 +7,10 @@ const TransactionsHistory = () => {
   const navigate = useNavigate();
   const { transactions } = useTransactionStore();
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Group transactions by month and year
   const groupedTransactions = transactions.reduce((acc, transaction) => {
     const key = `${transaction.month} ${transaction.year}`;
